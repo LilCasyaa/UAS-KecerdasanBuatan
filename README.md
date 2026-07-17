@@ -140,7 +140,7 @@ Buka file `uas_model.ipynb` menggunakan Google Colab atau Jupyter Notebook, kemu
 
 ---
 
-# 📄 Lisensi
+## 📄 Lisensi
 
 Repository ini dibuat untuk memenuhi tugas UAS Mata Kuliah Kecerdasan Buatan.
 
