@@ -25,7 +25,7 @@ Dua algoritma klasifikasi, yaitu **Decision Tree** dan **Random Forest**, diguna
 
 ## 📂 Struktur Repository
 
-UAS-KecerdasanBuatan/
+```UAS-KecerdasanBuatan/
 │
 ├── README.md
 ├── Laporan_uas.md
@@ -43,6 +43,7 @@ UAS-KecerdasanBuatan/
         └── [5] UCI Heart Disease.pdf
 │
 └── images/
+```
 
 ---
 
