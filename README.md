@@ -112,7 +112,7 @@ Penelitian ini membandingkan performa algoritma Decision Tree dan Random Forest 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/UAS-KecerdasanBuatan.git
+git clone https://github.com/LilCasyaa/UAS-KecerdasanBuatan.git
 ```
 
 ### 2. Masuk ke Folder Project
