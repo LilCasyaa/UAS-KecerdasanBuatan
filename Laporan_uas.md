@@ -35,7 +35,7 @@ Di sisi lain, perkembangan teknologi Artificial Intelligence (AI), khususnya Mac
 
 ## 2.2 Literature Review
 
-Berbagai penelitian telah menunjukkan bahwa algoritma Machine Learning mampu memberikan performa yang baik dalam klasifikasi penyakit jantung [1],[2],[3]. Algoritma seperti Decision Tree dan Random Forest banyak digunakan karena mampu menangani data klasifikasi dengan baik, mudah diinterpretasikan, serta memiliki tingkat akurasi yang tinggi pada berbagai dataset kesehatan.
+Berbagai penelitian telah menunjukkan bahwa algoritma Machine Learning mampu memberikan performa yang baik dalam klasifikasi penyakit jantung [1],[2],[3]. Algoritma seperti Decision Tree dan Random Forest banyak digunakan karena mampu menangani data klasifikasi dengan baik, mudah diinterpretasikan, serta memiliki tingkat akurasi yang tinggi pada berbagai dataset kesehatan [7].
 
 Decision Tree bekerja dengan membentuk struktur pohon keputusan berdasarkan atribut yang paling berpengaruh terhadap target klasifikasi. Sementara itu, Random Forest merupakan metode ensemble yang menggabungkan banyak Decision Tree sehingga mampu meningkatkan stabilitas model serta mengurangi risiko overfitting [3],[4].
 
@@ -226,6 +226,8 @@ Berdasarkan hasil Exploratory Data Analysis dapat diperoleh beberapa insight seb
 - Beberapa atribut memiliki hubungan yang cukup kuat terhadap variabel target.
 - Dataset telah memiliki kualitas yang baik untuk digunakan pada proses pemodelan tanpa memerlukan preprocessing yang kompleks.
 - Algoritma Decision Tree dan Random Forest dipilih karena mampu menangani data numerik, tidak memerlukan normalisasi, serta cukup robust terhadap outlier.
+- Tidak diperlukan proses normalisasi karena algoritma yang digunakan berbasis pohon keputusan.
+- Outlier tetap dipertahankan karena masih merepresentasikan kondisi medis pasien dan tidak terlalu memengaruhi performa Decision Tree maupun Random Forest.
 
 # 5. Data Preparation
 
@@ -283,7 +285,7 @@ Berdasarkan tahapan data preparation yang telah dilakukan, diperoleh beberapa ha
 
 ## 6.1 Pemilihan Algoritma
 
-Pada penelitian ini digunakan dua algoritma klasifikasi, yaitu **Decision Tree** dan **Random Forest**. Kedua algoritma dipilih karena mampu menangani permasalahan klasifikasi dengan baik, mudah diimplementasikan menggunakan Scikit-learn, serta banyak digunakan dalam penelitian pada bidang kesehatan.
+Pada penelitian ini digunakan dua algoritma klasifikasi, yaitu **Decision Tree** dan **Random Forest**. Kedua algoritma dipilih karena mampu menangani permasalahan klasifikasi dengan baik, mudah diimplementasikan menggunakan Scikit-learn, serta banyak digunakan dalam penelitian pada bidang kesehatan [7].
 
 Decision Tree dipilih karena menghasilkan model yang mudah dipahami melalui struktur pohon keputusan. Sementara itu, Random Forest dipilih karena merupakan pengembangan dari Decision Tree yang menggabungkan banyak pohon keputusan (*ensemble learning*) sehingga mampu meningkatkan performa prediksi dan mengurangi risiko *overfitting*.
 
@@ -503,16 +505,33 @@ Beberapa rekomendasi untuk penelitian selanjutnya adalah:
 - Melakukan hyperparameter tuning guna meningkatkan performa model.
 - Menggunakan teknik Cross Validation agar hasil evaluasi lebih stabil.
 
+---
+
 # 9. Referensi
 
 [1] Nasution, N., Hasan, M. A., & Bakri Nasution, F. (2025). *Predicting Heart Disease Using Machine Learning: An Evaluation of Logistic Regression, Random Forest, SVM, and KNN Models on the UCI Heart Disease Dataset*. IT Journal Research and Development, 9(2), 140–150. https://doi.org/10.25299/itjrd.2025.17941
 
 [2] Anderies, A., Tchin, J. A. R. W., Putro, P. H., Darmawan, Y. P., & Gunawan, A. A. S. (2022). *Prediction of Heart Disease UCI Dataset Using Machine Learning Algorithms*. Engineering, Mathematics and Computer Science Journal (EMACS), 4(3). https://doi.org/10.21512/emacsjournal.v4i3.8683
 
-[3] Assegie, T. A., Rangarajan, P. K., Kumar, N. K., & Vigneswari, D. *An Empirical Study on Machine Learning Algorithms for Heart Disease Prediction*. IAES International Journal of Artificial Intelligence (IJ-AI).
+[3] Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5–32. https://doi.org/10.1023/A:1010933404324
 
-[4] Rachmat, R., Iskandar, S. B., Kasmawaru, K., & Suherwin, S. (2025). *Comparison of Coronary Heart Disease Prediction Using Basic Model and Ensemble Learning*. Journal of Intelligent Decision Support System (IDSS), 8(2).
+[4] Quinlan, J. R. (1986). Induction of Decision Trees. Machine Learning, 1(1), 81–106. https://doi.org/10.1007/BF00116251
 
 [5] Janosi, A., Steinbrunn, W., Pfisterer, M., & Detrano, R. (1989). *Heart Disease Dataset*. UCI Machine Learning Repository. https://doi.org/10.24432/C52P4X
 
 [6] World Health Organization. (2023). Cardiovascular diseases (CVDs). https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
+
+[7] Karima, I. S. (2025). Penerapan machine learning untuk memprediksi risiko pengidap penyakit jantung menggunakan algoritma Decision Tree. Format: Jurnal Ilmiah Teknik Informatika, 14(1). https://doi.org/10.22441/format.2025.v14.i1.007
+
+---
+
+# 10. Lampiran
+
+## A. Dataset Heart Disease UCI
+![Dataset](images/dataset.png)
+
+## B. Informasi Dataset
+![Informasi Dataset](images/informasi_dataset.png)
+
+## C. Statistik Deskriptif 
+![Statistik Deskriptif](images/statistik_deskriptif.png)
