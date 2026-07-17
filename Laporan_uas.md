@@ -309,11 +309,12 @@ Tahap pertama adalah membangun model menggunakan algoritma Decision Tree.
 
 Model dibuat menggunakan `DecisionTreeClassifier()` dari Scikit-learn dan dilatih menggunakan data training yang telah dipersiapkan pada tahap sebelumnya.
 
-[dt_model = DecisionTreeClassifier(
+```dt_model = DecisionTreeClassifier(
     criterion="gini",
     max_depth=5,
     random_state=42)
-dt_model.fit(X_train, y_train)]
+dt_model.fit(X_train, y_train)
+```
 
 Setelah proses pelatihan selesai, model digunakan untuk melakukan prediksi terhadap data testing sehingga diperoleh hasil evaluasi berupa Accuracy, Precision, Recall, F1-Score, Classification Report, dan Confusion Matrix.
 
@@ -325,13 +326,14 @@ Tahap berikutnya adalah membangun model menggunakan algoritma Random Forest.
 
 Model dibuat menggunakan `RandomForestClassifier()` dari Scikit-learn dan dilatih menggunakan data training yang sama agar hasil evaluasi dapat dibandingkan secara adil.
 
-[from sklearn.ensemble import RandomForestClassifier
+```from sklearn.ensemble import RandomForestClassifier
 rf_model = RandomForestClassifier(
     n_estimators=100,
     criterion="gini",
     max_depth=5,
     random_state=42
-)]
+)
+```
 
 Selanjutnya model digunakan untuk melakukan prediksi terhadap data testing dan dihitung metrik evaluasinya.
 
