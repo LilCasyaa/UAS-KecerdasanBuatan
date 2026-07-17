@@ -17,10 +17,9 @@
 5. [Data Preparation](#5-data-preparation)
 6. [Modeling](#6-modeling)
 7. [Evaluation](#7-evaluation)
-8. [Implementasi Sistem](#8-implementasi-sistem)
-9. [Kesimpulan dan Rekomendasi](#9-kesimpulan-dan-rekomendasi)
-10. [Referensi](#10-referensi)
-11. [Lampiran](#11-lampiran)
+8. [Kesimpulan dan Rekomendasi](#9-kesimpulan-dan-rekomendasi)
+9. [Referensi](#10-referensi)
+10. [Lampiran](#11-lampiran)
 
 ---
 
