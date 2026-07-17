@@ -33,15 +33,15 @@ UAS-KecerdasanBuatan/
 ├── UAS_KecerdasanBuatan_model.ipynb
 │
 └── data/
-    ├── dataset/
-    │   └── heart-disease.csv
-    │
-    └── jurnal/
-        ├── [1] Decision Tree.pdf
-        ├── [2] Random Forest.pdf
-        ├── [3] Heart Disease.pdf
-        ├── [4] Machine Learning.pdf
-        └── [5] UCI Heart Disease.pdf
+|   ├── dataset/
+|   │   └── heart-disease.csv
+|   │
+|   └── jurnal/
+|       ├── [1] Decision Tree.pdf
+|       ├── [2] Random Forest.pdf
+|       ├── [3] Heart Disease.pdf
+|       ├── [4] Machine Learning.pdf
+|       └── [5] UCI Heart Disease.pdf
 │
 └── images/
 ```
