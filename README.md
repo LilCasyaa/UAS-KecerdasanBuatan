@@ -1,8 +1,8 @@
-# UAS Kecerdasan Buatan
+# UJIAN AKHIR SEMESTER KECERDASAN BUATAN
 
 ![Banner](images/banner.png)
 
-## Analisis Klasifikasi Risiko Penyakit Jantung Menggunakan Algoritma Decision Tree dan Random Forest
+## ANALISIS KLASIFIKASI RISIKO PENYAKIT JANTUNG MENGGUNAKAN ALGORITMA DECISION TREE DAN RANDOM FOREST
 
 ## ✨ Informasi Proyek
 
