@@ -58,6 +58,8 @@ UAS-KecerdasanBuatan/
 - Scikit-learn
 - Google Colab
 
+---
+
 ## 📂 Dataset
 
 Dataset yang digunakan pada proyek ini adalah **Heart Disease UCI Dataset**, yang berisi data medis pasien untuk mengklasifikasikan risiko penyakit jantung.
