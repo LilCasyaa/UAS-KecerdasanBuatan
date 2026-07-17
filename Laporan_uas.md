@@ -1,13 +1,35 @@
-# Laporan UAS Kecerdasan Buatan
+# LAPORAN UJIAN AKHIR SEMESTER (UAS) 
+
+---
+
+- Mata Kuliah : Kecerdasan Buatan
+- Kampus : Institut Teknologi Garut
+- Program Studi : Teknik Informatika
+- Semester : 4
+
+---
+
+# Daftar Isi
+1. [Judul Proyek](#1-judul-proyek)
+2. [Business Understanding](#2-business-understanding)
+3. [Data Understanding](#3-data-understanding)
+4. [Exploratory Data Analysis (EDA)](#4-exploratory-data-analysis-eda)
+5. [Data Preparation](#5-data-preparation)
+6. [Modeling](#6-modeling)
+7. [Evaluation](#7-evaluation)
+8. [Implementasi Sistem](#8-implementasi-sistem)
+9. [Kesimpulan dan Rekomendasi](#9-kesimpulan-dan-rekomendasi)
+10. [Referensi](#10-referensi)
+11. [Lampiran](#11-lampiran)
 
 ---
 
 # 1. Judul Proyek
 
 ## 1.1 Judul
-Analisis Klasifikasi Risiko Penyakit Jantung Menggunakan Algoritma Decision Tree dan Random Forest
+ANALISIS KLASIFIKASI RISIKO PENYAKIT JANTUNG MENGGUNAKAN ALGORITMA DECISION TREE DAN RANDOM FOREST
 
-## 1.2 Nama Kelompok
+## 1.2 Nama Mahasiswa
 
 | Nama | NIM |
 |------|-----|
@@ -22,6 +44,9 @@ Perkembangan teknologi Artificial Intelligence (AI), khususnya Machine Learning 
 Pada proyek ini digunakan **Heart Disease UCI Dataset** yang diperoleh melalui Kaggle. Dataset tersebut berisi data klinis pasien yang telah banyak digunakan dalam penelitian klasifikasi penyakit jantung. Dua algoritma klasifikasi, yaitu **Decision Tree** dan **Random Forest**, dipilih karena memiliki kemampuan dalam menangani data klasifikasi, mudah diimplementasikan, serta dapat dibandingkan performanya untuk menentukan model yang memberikan hasil prediksi terbaik.
 
 Melalui proyek ini diharapkan dapat diperoleh model klasifikasi yang mampu membantu proses prediksi risiko penyakit jantung secara efektif. Selain itu, hasil penelitian ini juga menjadi sarana penerapan konsep machine learning dalam menyelesaikan permasalahan nyata di bidang kesehatan.
+
+
+---
 
 # 2. Business Understanding
 
@@ -77,6 +102,9 @@ Adapun manfaat dari implementasi AI pada penelitian ini antara lain:
 - Menjadi alat pendukung pengambilan keputusan bagi tenaga medis.
 - Menjadi media pembelajaran penerapan Machine Learning dalam bidang kesehatan.
 - Memberikan perbandingan performa antara algoritma Decision Tree dan Random Forest sehingga dapat diketahui algoritma yang lebih sesuai untuk dataset yang digunakan.
+
+
+---
 
 # 3. Data Understanding
 
@@ -159,6 +187,9 @@ Penjelasan target adalah sebagai berikut.
 
 Model machine learning akan mempelajari hubungan antara ketiga belas atribut prediktor dengan variabel target untuk menghasilkan prediksi mengenai risiko penyakit jantung pada data baru.
 
+
+---
+
 # 4. Exploratory Data Analysis (EDA)
 
 ## 4.1 Tujuan Exploratory Data Analysis
@@ -229,6 +260,9 @@ Berdasarkan hasil Exploratory Data Analysis dapat diperoleh beberapa insight seb
 - Tidak diperlukan proses normalisasi karena algoritma yang digunakan berbasis pohon keputusan.
 - Outlier tetap dipertahankan karena masih merepresentasikan kondisi medis pasien dan tidak terlalu memengaruhi performa Decision Tree maupun Random Forest.
 
+
+---
+
 # 5. Data Preparation
 
 ## 5.1 Pembersihan Data (Data Cleaning)
@@ -281,6 +315,9 @@ Berdasarkan tahapan data preparation yang telah dilakukan, diperoleh beberapa ha
 - Tidak dilakukan normalisasi karena algoritma yang digunakan tidak memerlukan proses tersebut.
 - Dataset berhasil dibagi menjadi data training dan data testing dengan perbandingan 80:20.
 
+
+---
+
 # 6. Modeling
 
 ## 6.1 Pemilihan Algoritma
@@ -309,7 +346,8 @@ Tahap pertama adalah membangun model menggunakan algoritma Decision Tree.
 
 Model dibuat menggunakan `DecisionTreeClassifier()` dari Scikit-learn dan dilatih menggunakan data training yang telah dipersiapkan pada tahap sebelumnya.
 
-```dt_model = DecisionTreeClassifier(
+```
+dt_model = DecisionTreeClassifier(
     criterion="gini",
     max_depth=5,
     random_state=42)
@@ -370,6 +408,9 @@ Visualisasi ini membantu memahami bagaimana model mengambil keputusan berdasarka
 **![Visualisasi Decision Tree](images/visual_decision_tree.png)**
 
 Visualisasi serupa tidak ditampilkan untuk Random Forest karena algoritma tersebut terdiri dari banyak pohon keputusan sehingga sulit direpresentasikan dalam satu gambar.
+
+
+---
 
 # 7. Evaluation
 
@@ -460,6 +501,9 @@ Berdasarkan hasil evaluasi yang telah dilakukan, diperoleh bahwa kedua algoritma
 
 Pemilihan model terbaik dilakukan berdasarkan hasil pengujian pada data testing sehingga dapat memberikan gambaran mengenai kemampuan model dalam melakukan prediksi terhadap data baru. Selain mempertimbangkan nilai metrik evaluasi, model terbaik juga dipilih berdasarkan kestabilan performa dan kemampuannya dalam mengurangi kesalahan klasifikasi.
 
+
+---
+
 # 8. Kesimpulan dan Rekomendasi
 
 ## 8.1 Kesimpulan
@@ -507,6 +551,7 @@ Beberapa rekomendasi untuk penelitian selanjutnya adalah:
 - Melakukan hyperparameter tuning guna meningkatkan performa model.
 - Menggunakan teknik Cross Validation agar hasil evaluasi lebih stabil.
 
+
 ---
 
 # 9. Referensi
@@ -524,6 +569,7 @@ Beberapa rekomendasi untuk penelitian selanjutnya adalah:
 [6] World Health Organization. (2023). Cardiovascular diseases (CVDs). https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
 
 [7] Karima, I. S. (2025). Penerapan machine learning untuk memprediksi risiko pengidap penyakit jantung menggunakan algoritma Decision Tree. Format: Jurnal Ilmiah Teknik Informatika, 14(1). https://doi.org/10.22441/format.2025.v14.i1.007
+
 
 ---
 
